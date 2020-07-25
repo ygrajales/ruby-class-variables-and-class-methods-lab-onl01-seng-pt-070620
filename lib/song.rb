@@ -39,14 +39,14 @@ class Song
 
   def self.genre_count
     
-    @@genres.group_by {|genre| genre}.map{|g, c| [g, c.length]}.to_h
+    @@genres.group_by{|genre| genre}.map{|g, c| [g, c.length]}.to_h
     
   end
   
   
   def self.artist_count
     
-    @@artists.group_by {|artist| artist}.map{|a, c| [a, c.length]}.to_h
+    @@artists.group_by{|artist| artist}.map{|a, c| [a, c.length]}.to_h
   
   end
 
